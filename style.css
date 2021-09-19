@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: ' Poppins', sans-serif;
+    font-weight: 600;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    --primary: #1D3557;
+    --light: #fff;
+    
+}
+.main-container {
+    width: 100%;
+    min-height: min-content;
+    display: flex;
+    justify-content: space-evenly;
+}
+.main-container img {
+    width: 300px;
+    margin: 50px;
+}
+.birthday-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    border: 3px solid var(--primary);
+    border-radius: 10px;
+}
+header {
+    background-color: var(--primary);
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    word-wrap: break-word;
+    text-align: center;
+}
+header h1 {
+    font-size: 3rem;
+    color: var(--light);
+    font-weight: 700;
+}
+.birthday-container input {
+    padding: 10px;
+    margin: 5px;
+    border: 3px solid var(--primary);
+    border-radius: 10px;
+    font-size: 1rem;
+    text-align: center;
+}
+.birthday-container input:focus {
+    outline: none;
+}
+.birthday-container label {
+    margin-top: 1.5rem;
+
+}
+#check-btn {
+    padding: 8px 20px;
+    margin: 1rem;
+    border: 3px solid var(--primary);
+    font-size: 1.1rem;
+    border-radius: 10px;
+    transition: .4s,;
+}
+
+#check-btn:hover {
+    background-color: var(--primary);
+    border: 3px solid var(--primary);
+    color: var(--light);
+}
+.output-div {
+    width: 100%;
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 10px;
+    font-size: .9rem;
+    border-radius: 0 20px;
+    opacity: 0;
+    transition: opacity .7s;
+}
+.output-div div {
+    text-align: center;
+}
+.show {
+    opacity: 1;
+}
+footer {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: var(--primary);
+
+}
+footer h2{
+    margin:20px;
+    color: var(--primary);
+    font-size: 2rem;
+} 
+footer img {
+    margin: 0 10px;
+    width: 2.5rem;
+    transition: transform 0.2s;
+}
+footer img:hover {
+    transform: scale(1.15);
+}
+
+
+@media(max-width:1200px) and (min-width:900px) {
+    .main-container img {
+        width: 240px;
+    }
+    * {
+        font-size: 15px;
+    }
+}
+
+@media(max-width:900px) and (min-width:650px) {
+    .main-container img {
+        width: 200px;
+    }
+    *{
+        font-size: 13px;
+    }
+}
+@media(max-width:650px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+}
