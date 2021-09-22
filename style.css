@@ -74,7 +74,13 @@ header h1 {
     border-radius: 10px;
     transition: .4s,;
 }
-
+.birthday-container p {
+    display: block;
+    background-color: bisque;
+    font-size: .8rem;
+    padding: 10px;
+    margin: 10px;
+}
 #check-btn:hover {
     background-color: var(--primary);
     border: 3px solid var(--primary);
